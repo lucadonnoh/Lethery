@@ -4,8 +4,9 @@ import './App.css';
 import web3 from './web3';
 
 class App extends Component {
+
   render() {
-    web3.eth.getAccounts().then(e => console.log(e));
+    web3.eth.getAccounts().then(console.log);
 
     return (
       <div className="App">
