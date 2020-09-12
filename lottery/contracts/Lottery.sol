@@ -20,8 +20,6 @@ contract Lottery {
     }
 
     function pickWinner() public restricted {
-        require(msg.sender == manager);
-
         uint index = random()%players.length;
         players[index].transfer(address(this).balance);
         players = new address payable[](0); //dynamic array of 0 length
