@@ -53,13 +53,12 @@ class App extends Component {
 
     return (
       <div>
-        <h2>Lottery Contract</h2>
+        <h1>Lottery Contract</h1>
         <p>
           This contract is managed by {this.state.manager}.
           There are currently {this.state.players.length} people entered,
           competing to win {web3.utils.fromWei(this.state.balance, 'ether')} ether!
         </p>
-        <hr/>
 
         <form onSubmit={this.onSubmit}>
           <h4>Want to try your luck?</h4>
@@ -69,10 +68,10 @@ class App extends Component {
           </div>
           <button>Enter</button>
         </form>
-        <hr/>
+
         <h4>Ready to pick a winner?</h4>
         <button onClick={this.onClick}>Pick a winner!</button>
-        <hr/>
+
         <h1>{this.state.message}</h1>
       </div>
     );

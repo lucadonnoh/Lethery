@@ -1,0 +1,15 @@
+body {
+    top: 0;
+    padding: 0;
+}
+
+#root {
+    height: 100vh;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
