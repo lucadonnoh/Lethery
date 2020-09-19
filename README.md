@@ -1,4 +1,4 @@
-# Lottery.sol
+# Lethery
 
 Simple lottery contract written in Solidity w/ React frontend.
 
